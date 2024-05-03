@@ -12,8 +12,39 @@ COLORS
     --color-purple-dark: #A730DF;
     --color-blue-dark: #304CDF;
     --color-green: #34DF30;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-border: #FFFFFF80;
+
+    
 }
 
+@mixin primaryheading{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+@mixin heading__secondary{
+    font-size: 61px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    
+}
+
+@mixin heading__tertiary{
+    line-height: 27px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+@mixin secondary__pargraph{
+    font-size: 17px;
+    line-height: 24px;
+}
 
 *{
     margin: 0;

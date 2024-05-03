@@ -63,18 +63,10 @@
     width: 54%;
 
     .heading__primary{
-        text-transform: uppercase;
-        font-family: Graphik;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-        margin-bottom: 15px;
+        @include primaryheading;
     }
     .heading__secondary{
-        font-family: Graphik;
-        font-size: 61px;
-        font-weight: 900;
-        margin-bottom: 15px;
+        @include heading__secondary;
     
     }
     .button__blue{
@@ -100,6 +92,43 @@
     
     
     }
+}
+
+
+//////////////////////////////////
+/// MAIN
+
+.container__content{
+    .heading__primary{
+        @include primaryheading;
+    }
+
+    .heading__secondary{
+        @include heading__secondary;
+    }
+
+    .heading__tertiary{
+        @include heading__tertiary;
+    }
+
+    
+}
+.card{
+    width: 326px;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 20px;
+    background-color: #9FB7CE26;
+
+    .secondary__pargraph{
+        @include secondary__pargraph;
+    }
+
+    &__image{
+        width: 60px;
+        height: 60px;
+    }
+
 }
 
 

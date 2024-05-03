@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .first__head{
@@ -25,6 +25,50 @@
     margin-top: 83px;
     color: #fff;
     display: flex;
+    justify-content: space-between;
     align-items: start;
     padding: 60px;
+}
+
+///////////////////////////////////
+/// MAIN
+main{
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section__one{
+        background-color: var(--color-black);
+        position: relative;
+        color: var(--color-white);
+
+        .container__content{
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .cards__box{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    .section__two{
+        background-color: #d28080;
+    }
+    .section__three{
+        background-color: #8c80d2;
+    }
+    .section__four{
+        background-color: #3416d9;
+    }
 }
