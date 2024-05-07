@@ -63,7 +63,6 @@ html {
 
 main section {
   width: 100%;
-  height: 100vh;
 }
 main .section__one {
   background-color: var(--color-black);
@@ -88,7 +87,14 @@ main .section__one .cards__box {
   width: 100%;
 }
 main .section__two {
-  background-color: #d28080;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+main .section__two .multichain__container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 main .section__three {
   background-color: #8c80d2;
@@ -212,6 +218,52 @@ main .section__four {
 .card__image {
   width: 60px;
   height: 60px;
+}
+
+.top__div,
+.bottom__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top__div .left__container .heading__primary {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.top__div .left__container .heading__secondary {
+  font-size: 61px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.top__div .right__container .button__blue {
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px;
+  background-color: #2FACDA;
+  padding: 15px 46px 15px 46px;
+  border: 1px solid #2FACDA;
+  color: #fff;
+}
+
+.bottom__div {
+  gap: 149px;
+  margin-top: 60px;
+}
+.bottom__div .right__container .heading__tertiary {
+  line-height: 27px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.bottom__div .right__container .secondary__pargraph {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

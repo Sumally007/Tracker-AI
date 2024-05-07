@@ -46,6 +46,16 @@ COLORS
     line-height: 24px;
 }
 
+@mixin button__blue{
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px;
+    background-color: #2FACDA;
+    padding: 15px 46px 15px 46px;
+    border: 1px solid #2FACDA;    
+    color: #fff; 
+}
+
 *{
     margin: 0;
     padding: 0;

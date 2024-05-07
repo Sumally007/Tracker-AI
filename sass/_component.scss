@@ -70,13 +70,7 @@
     
     }
     .button__blue{
-        display: inline-block;
-        text-decoration: none;
-        padding: 3px;
-        background-color: #2FACDA;
-        padding: 15px 46px 15px 46px;
-        border: 1px solid #2FACDA;    
-        color: #fff;   
+        @include button__blue;  
     }
     
     .paragraph{
@@ -132,3 +126,47 @@
 }
 
 
+/////////////////////////////////////////
+/// SECTION TWO
+.top__div,
+.bottom__div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__div{
+    .left__container{
+        .heading__primary{
+            @include primaryheading;
+        }
+        .heading__secondary{
+            @include heading__secondary;
+        }
+    }
+
+    .right__container{
+        .button__blue{
+            @include button__blue;  
+        }
+    }
+}
+
+
+.bottom__div{
+    gap: 149px;
+    margin-top: 60px;
+
+    .right__container{
+        .heading__tertiary{
+            @include heading__tertiary;
+            text-transform: uppercase;
+        }
+
+        .secondary__pargraph{
+            @include secondary__pargraph;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
