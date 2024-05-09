@@ -18,6 +18,7 @@
     padding: 20px;
     position: fixed;
     background-color: #fff;
+    z-index: 100;
 }
 
 .second__head{
@@ -68,12 +69,23 @@ main{
         .multichain__container{
             width: 80%;
             margin: 0 auto;
-            padding-top: 100px;
+            padding-top: 150px;
             padding-bottom: 100px;
         }
     }
+
     .section__three{
-        background-color: #8c80d2;
+        background-color: var(--color-black);
+        color: var(--color-white);
+
+        .section__contents{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     .section__four{
         background-color: #3416d9;

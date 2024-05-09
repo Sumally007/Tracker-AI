@@ -170,3 +170,82 @@
     }
     
 }
+
+/////////////////////////////////////////
+/// SECTION THREE
+.section__contents{
+    width: 100%;
+    .heading__primary{
+        @include primaryheading;
+        text-align: center;
+    }
+
+    .heading__secondary{
+        @include heading__secondary;
+        text-align: center;
+    }
+    
+    .container__phase{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        
+
+        .phase__box{
+            width: 354px;
+            padding: 40px;
+            border: 0.77px solid var(--color-blue-light);
+            border-radius: 15px;
+            background-color: #3289a980;
+
+            .heading__tertiary{
+                @include heading__tertiary;
+                text-transform: uppercase;
+                font-size: 32px;
+            }
+
+            .list__box{
+                li{
+                    font-size: 21px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    list-style: none;
+                }
+            }
+        }
+
+        
+        
+    }
+
+    .line__box{
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+
+        .lines{
+            width: 180px;
+            padding: 3px;
+            border-radius: 100px;
+            background-color: var(--color-blue-light);
+
+            &--light{
+                background-color: #3289a980;
+            }
+        }
+
+        .arrow{
+            padding: 10px;
+            border: 1px solid #30485D96;
+            background: #30ADDA54;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
