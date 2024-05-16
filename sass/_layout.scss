@@ -88,6 +88,15 @@ main{
         }
     }
     .section__four{
-        background-color: #3416d9;
+        background: linear-gradient(180deg, #000000 0%, rgb(10, 71, 111) 53.64%, #000000 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--color-white);
     }
+}
+
+footer{
+    background-color: #000000;
+    color: var(--color-white);
+    
 }

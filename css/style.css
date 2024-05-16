@@ -115,7 +115,15 @@ main .section__three .section__contents {
   align-items: center;
 }
 main .section__four {
-  background-color: #3416d9;
+  background: linear-gradient(180deg, #000000 0%, rgb(10, 71, 111) 53.64%, #000000 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+}
+
+footer {
+  background-color: #000000;
+  color: var(--color-white);
 }
 
 .logo {
@@ -350,6 +358,119 @@ main .section__four {
   border-radius: 100px;
   width: 40px;
   height: 40px;
+}
+
+.section__contents .heading__primary {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.section__contents .heading__secondary {
+  font-size: 61px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.section__contents .secondary__pargraph {
+  font-size: 17px;
+  line-height: 24px;
+  font-size: 22px;
+  text-align: center;
+}
+.section__contents .statistic__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  margin-top: 100px;
+  padding-bottom: 120px;
+}
+.section__contents .statistic__container .left__box {
+  height: 100%;
+}
+.section__contents .statistic__container .left__box .box__details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.section__contents .statistic__container .left__box .box__details div img {
+  width: 45px;
+  height: 45px;
+}
+.section__contents .statistic__container .left__box .box__details p {
+  display: inline-block;
+  text-align: left;
+  line-height: 32px;
+  margin-left: 15px;
+}
+.section__contents .statistic__container .left__box .box__details p .DB30DF {
+  color: #DB30DF;
+}
+.section__contents .statistic__container .left__box .box__details p .DF3079 {
+  color: #DF3079;
+}
+.section__contents .statistic__container .left__box .box__details p .b0AEDF {
+  color: #30AEDF;
+}
+.section__contents .statistic__container .right__box {
+  height: 100%;
+}
+.section__contents .statistic__container .right__box .box__details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.section__contents .statistic__container .right__box .box__details div img {
+  width: 45px;
+  height: 45px;
+}
+.section__contents .statistic__container .right__box .box__details p {
+  display: inline-block;
+  text-align: left;
+  line-height: 32px;
+  margin-left: 15px;
+}
+.section__contents .statistic__container .right__box .box__details p .DF9930 {
+  color: #DF9930;
+}
+.section__contents .statistic__container .right__box .box__details p .A730DF {
+  color: #A730DF;
+}
+.section__contents .statistic__container .right__box .box__details p .b04CDF {
+  color: #304CDF;
+}
+.section__contents .statistic__container .right__box .box__details p .b3DF30 {
+  color: #33DF30;
+}
+
+footer .navigation__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7764705882);
+  padding: 100px 0 10px 0;
+}
+footer .navigation__list {
+  width: 40%;
+}
+footer .navigation__list ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+footer .navigation__list ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+footer P {
+  text-align: center;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
