@@ -19,6 +19,8 @@ COLORS
     
 }
 
+$bp-moble: 430px;
+
 @mixin primaryheading{
     text-transform: uppercase;
     font-size: 18px;

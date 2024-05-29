@@ -1,4 +1,18 @@
 //////////////////////////////////
+/// MANU BTN
+.manu{
+    position: fixed;
+    top: 26px;
+    right: 26px;
+    z-index: 1000;
+
+    @media only screen and (min-width: $bp-moble){
+        display: none;
+    }
+}
+
+
+//////////////////////////////////
 /// HEADER
 .logo{
     width: 56px;
@@ -7,6 +21,10 @@
 }
 
 .navigation{
+
+    @media only screen and (max-width: $bp-moble){
+        width: 117.93px;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +34,10 @@
     &__lists{
         width: 326px;
         color: #0A0A14;
+
+        @media only screen and (max-width: $bp-moble){
+            display: none;
+        }
 
         &--box{
             display: flex;
@@ -45,6 +67,10 @@
     }
 
     &__button{
+        @media only screen and (max-width: $bp-moble){
+            display: none;
+        }
+        
         .button__white{
             color: #2FACDA;
             text-decoration: none;
@@ -57,6 +83,8 @@
 
         }
     }
+
+    
 }
 
 .header__contents{
@@ -82,8 +110,10 @@
     .hero__image{
         width: 457px;
         height: 457px;
-        display: inline-block;
-    
+
+        @media only screen and (max-width: $bp-moble){
+            display: none;
+        }
     
     }
 }
