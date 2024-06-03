@@ -37,17 +37,15 @@ body {
 }
 
 .main__header {
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: var(--color-black);
 }
-
-.first__head {
+.main__header .first__head {
   width: 100%;
-  height: 82px;
+  height: 12%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,8 +54,12 @@ body {
   background-color: #fff;
   z-index: 100;
 }
-
-.second__head {
+@media only screen and (max-width: 480px) {
+  .main__header .first__head {
+    height: 7%;
+  }
+}
+.main__header .second__head {
   width: 100%;
   margin-top: 83px;
   color: #fff;
@@ -66,41 +68,35 @@ body {
   align-items: start;
   padding: 60px;
 }
-
-main section {
-  width: 100%;
+@media only screen and (max-width: 480px) {
+  .main__header .second__head {
+    padding: 10px 4px 10px 4px;
+  }
 }
+
 main .section__one {
+  width: 100vw;
   background-color: var(--color-black);
   position: relative;
   color: var(--color-white);
 }
-main .section__one .container__content {
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-main .section__one .cards__box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+@media only screen and (max-width: 480px) {
+  main .section__one {
+    width: 100%;
+    height: 136vh;
+  }
 }
 main .section__two {
   background-color: var(--color-black);
   color: var(--color-white);
+  display: flex;
+  justify-content: center;
 }
 main .section__two .multichain__container {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0 100px 0;
   width: 80%;
-  margin: 0 auto;
-  padding-top: 150px;
-  padding-bottom: 100px;
 }
 main .section__three {
   background-color: var(--color-black);
@@ -113,6 +109,11 @@ main .section__three .section__contents {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  main .section__three .section__contents {
+    width: 100%;
+  }
 }
 main .section__four {
   background: linear-gradient(180deg, #000000 0%, rgb(10, 71, 111) 53.64%, #000000 100%);
@@ -132,64 +133,63 @@ footer {
   right: 26px;
   z-index: 1000;
 }
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 480px) {
   .manu {
     display: none;
   }
 }
 
-.logo {
+.main__header .first__head .logo {
   width: 56px;
   height: 56.91px;
 }
-
-.navigation {
+.main__header .first__head .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 626.93px;
   height: 48px;
 }
-@media only screen and (max-width: 430px) {
-  .navigation {
+@media only screen and (max-width: 480px) {
+  .main__header .first__head .navigation {
     width: 117.93px;
   }
 }
-.navigation__lists {
+.main__header .first__head .navigation__lists {
   width: 326px;
   color: #0A0A14;
 }
-@media only screen and (max-width: 430px) {
-  .navigation__lists {
+@media only screen and (max-width: 480px) {
+  .main__header .first__head .navigation__lists {
     display: none;
   }
 }
-.navigation__lists--box {
+.main__header .first__head .navigation__lists--box {
   display: flex;
   list-style: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 17.6px;
 }
-.navigation__lists--links {
+.main__header .first__head .navigation__lists--links {
   text-decoration: none;
 }
-.navigation__mood {
+.main__header .first__head .navigation__mood {
   background-color: rgba(185, 185, 185, 0.9254901961);
   padding: 1px;
   border-radius: 100px;
   display: flex;
 }
-.navigation__mood img {
+.main__header .first__head .navigation__mood img {
   width: 31.14px;
   height: 31.14px;
 }
-@media only screen and (max-width: 430px) {
-  .navigation__button {
+@media only screen and (max-width: 480px) {
+  .main__header .first__head .navigation__button {
     display: none;
   }
 }
-.navigation__button .button__white {
+.main__header .first__head .navigation__button .button__white {
   color: #2FACDA;
   text-decoration: none;
   padding: 3px;
@@ -199,23 +199,36 @@ footer {
   padding: 15px 46px 15px 46px;
   border: 1px solid #2FACDA;
 }
-
-.header__contents {
+@media only screen and (max-width: 480px) {
+  .main__header .second__head {
+    margin-top: 84px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.main__header .second__head .header__contents {
   width: 54%;
 }
-.header__contents .heading__primary {
+@media only screen and (max-width: 480px) {
+  .main__header .second__head .header__contents {
+    text-align: center;
+    width: 100%;
+  }
+}
+.main__header .second__head .header__contents .heading__primary {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 15px;
 }
-.header__contents .heading__secondary {
+.main__header .second__head .header__contents .heading__secondary {
   font-size: 61px;
   font-weight: 900;
   margin-bottom: 15px;
+  font-size: 45px;
 }
-.header__contents .button__blue {
+.main__header .second__head .header__contents .button__blue {
   display: inline-block;
   text-decoration: none;
   padding: 3px;
@@ -224,76 +237,118 @@ footer {
   border: 1px solid #2FACDA;
   color: #fff;
 }
-.header__contents .paragraph {
+.main__header .second__head .header__contents .paragraph {
   margin-bottom: 15px;
   font-size: 19px;
   line-height: 26px;
 }
-.header__contents .hero__image {
+.main__header .second__head .hero__image {
   width: 457px;
   height: 457px;
 }
-@media only screen and (max-width: 430px) {
-  .header__contents .hero__image {
-    display: none;
+
+.section__one .container__image {
+  height: 100%;
+}
+.section__one .container__image .background__image {
+  width: 100%;
+  height: 100%;
+}
+.section__one .container__content {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 480px) {
+  .section__one .container__content {
+    top: 7%;
+    height: 100%;
+    display: block;
   }
 }
-
-.container__content .heading__primary {
+.section__one .container__content .heading__primary {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 15px;
+  text-align: center;
 }
-.container__content .heading__secondary {
+.section__one .container__content .heading__secondary {
   font-size: 61px;
   font-weight: 900;
   margin-bottom: 15px;
+  text-align: center;
 }
-.container__content .heading__tertiary {
+.section__one .container__content .heading__tertiary {
   line-height: 27px;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 12px;
 }
-
-.card {
+.section__one .cards__box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .section__one .cards__box {
+    flex-direction: column;
+    height: 80%;
+    align-items: center;
+  }
+}
+.section__one .cards__box .card {
   width: 326px;
   border-radius: 20px;
   padding: 20px;
   line-height: 20px;
   background-color: rgba(159, 183, 206, 0.1490196078);
 }
-.card .secondary__pargraph {
+.section__one .cards__box .card .secondary__pargraph {
   font-size: 17px;
   line-height: 24px;
 }
-.card__image {
+.section__one .cards__box .card__image {
   width: 60px;
   height: 60px;
 }
 
-.top__div,
-.bottom__div {
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container {
+    justify-content: center;
+  }
+}
+.section__two .multichain__container .top__div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.top__div .left__container .heading__primary {
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container .top__div {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.section__two .multichain__container .top__div .left__container .heading__primary {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 15px;
 }
-.top__div .left__container .heading__secondary {
+.section__two .multichain__container .top__div .left__container .heading__secondary {
   font-size: 61px;
   font-weight: 900;
   margin-bottom: 15px;
 }
-.top__div .right__container .button__blue {
+.section__two .multichain__container .top__div .right__container .button__blue {
   display: inline-block;
   text-decoration: none;
   padding: 3px;
@@ -302,19 +357,40 @@ footer {
   border: 1px solid #2FACDA;
   color: #fff;
 }
-
-.bottom__div {
-  gap: 149px;
+.section__two .multichain__container .bottom__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 60px;
 }
-.bottom__div .right__container .heading__tertiary {
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container .bottom__div .left__container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container .bottom__div .left__container .coins {
+    width: 257px;
+    height: 257px;
+  }
+}
+.section__two .multichain__container .bottom__div .right__container {
+  flex-basis: 48%;
+}
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container .bottom__div .right__container {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+.section__two .multichain__container .bottom__div .right__container .heading__tertiary {
   line-height: 27px;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
-.bottom__div .right__container .secondary__pargraph {
+.section__two .multichain__container .bottom__div .right__container .secondary__pargraph {
   font-size: 17px;
   line-height: 24px;
   margin-bottom: 10px;
@@ -350,6 +426,13 @@ footer {
   border-radius: 15px;
   background-color: rgba(50, 137, 169, 0.5019607843);
 }
+@media only screen and (max-width: 480px) {
+  .section__contents .container__phase .phase__box {
+    width: 155.3px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+}
 .section__contents .container__phase .phase__box .heading__tertiary {
   line-height: 27px;
   font-size: 24px;
@@ -358,11 +441,21 @@ footer {
   text-transform: uppercase;
   font-size: 32px;
 }
+@media only screen and (max-width: 480px) {
+  .section__contents .container__phase .phase__box .heading__tertiary {
+    font-size: 20px;
+  }
+}
 .section__contents .container__phase .phase__box .list__box li {
   font-size: 21px;
   font-weight: 400;
   line-height: 25px;
   list-style: none;
+}
+@media only screen and (max-width: 480px) {
+  .section__contents .container__phase .phase__box .list__box li {
+    font-size: 16px;
+  }
 }
 .section__contents .line__box {
   width: 500px;
@@ -372,6 +465,11 @@ footer {
   margin-top: 50px;
   margin-bottom: 100px;
   text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .section__contents .line__box {
+    width: 334px;
+  }
 }
 .section__contents .line__box .lines {
   width: 180px;
@@ -419,6 +517,11 @@ footer {
   margin-top: 100px;
   padding-bottom: 120px;
 }
+@media only screen and (max-width: 480px) {
+  .section__contents .statistic__container {
+    flex-direction: column;
+  }
+}
 .section__contents .statistic__container .left__box {
   height: 100%;
 }
@@ -445,6 +548,11 @@ footer {
 }
 .section__contents .statistic__container .left__box .box__details p .b0AEDF {
   color: #30AEDF;
+}
+@media only screen and (max-width: 480px) {
+  .section__contents .statistic__container .tocken__chat {
+    order: -1;
+  }
 }
 .section__contents .statistic__container .right__box {
   height: 100%;
@@ -486,14 +594,42 @@ footer .navigation__footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7764705882);
   padding: 100px 0 10px 0;
 }
+@media only screen and (max-width: 480px) {
+  footer .navigation__footer {
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer .navigation__logo {
+    margin-bottom: 20px;
+  }
+}
 footer .navigation__list {
   width: 40%;
+}
+@media only screen and (max-width: 480px) {
+  footer .navigation__list {
+    margin-bottom: 20px;
+    width: 50%;
+  }
 }
 footer .navigation__list ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+@media only screen and (max-width: 480px) {
+  footer .navigation__list ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+footer .navigation__list ul li {
+  margin-bottom: 10px;
 }
 footer .navigation__list ul li a {
   text-decoration: none;
