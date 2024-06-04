@@ -547,6 +547,11 @@ footer {
   font-size: 22px;
   text-align: center;
 }
+@media only screen and (max-width: 480px) {
+  .section__four .section__contents .secondary__pargraph {
+    font-size: 19px;
+  }
+}
 .section__four .section__contents .statistic__container {
   display: flex;
   justify-content: center;
