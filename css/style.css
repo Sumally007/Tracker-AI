@@ -445,6 +445,11 @@ footer {
   justify-content: space-between;
   margin-top: 100px;
 }
+@media only screen and (max-width: 480px) {
+  .section__contents .container__phase {
+    margin-top: 20px;
+  }
+}
 .section__contents .container__phase .phase__box {
   width: 354px;
   padding: 40px;
@@ -494,7 +499,9 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .section__contents .line__box {
-    width: 334px;
+    width: 307px;
+    margin-top: 23px;
+    margin-bottom: 34px;
   }
 }
 .section__contents .line__box .lines {

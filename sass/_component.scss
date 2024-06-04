@@ -321,6 +321,10 @@
         justify-content: space-between;
         margin-top: 100px;
         
+        @media only screen and (max-width: $bp-moble){
+            margin-top: 20px;
+        }
+        
 
         .phase__box{
             width: 354px;
@@ -372,7 +376,9 @@
         text-align: center;
 
         @media only screen and (max-width: $bp-moble){
-            width: 334px;
+            width: 307px;
+            margin-top: 23px;
+            margin-bottom: 34px;
         }
 
         .lines{
