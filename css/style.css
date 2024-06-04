@@ -83,7 +83,7 @@ main .section__one {
 @media only screen and (max-width: 480px) {
   main .section__one {
     width: 100%;
-    height: 136vh;
+    height: 126vh;
   }
 }
 main .section__two {
@@ -91,12 +91,6 @@ main .section__two {
   color: var(--color-white);
   display: flex;
   justify-content: center;
-}
-main .section__two .multichain__container {
-  display: flex;
-  flex-direction: column;
-  padding: 150px 0 100px 0;
-  width: 80%;
 }
 main .section__three {
   background-color: var(--color-black);
@@ -247,12 +241,21 @@ footer {
   height: 457px;
 }
 
-.section__one .container__image {
-  height: 100%;
+@media only screen and (max-width: 480px) {
+  .section__one--contents {
+    height: 80%;
+  }
 }
-.section__one .container__image .background__image {
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 480px) {
+  .section__one .container__image {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section__one .container__image .background__image {
+    width: 100%;
+    margin-top: 260px;
+  }
 }
 .section__one .container__content {
   position: absolute;
@@ -267,8 +270,8 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .section__one .container__content {
-    top: 7%;
-    height: 100%;
+    top: 3%;
+    height: 107%;
     display: block;
   }
 }
@@ -285,6 +288,11 @@ footer {
   font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .section__one .container__content .heading__secondary {
+    font-size: 44px;
+  }
 }
 .section__one .container__content .heading__tertiary {
   line-height: 27px;
@@ -320,9 +328,17 @@ footer {
   height: 60px;
 }
 
+.section__two .multichain__container {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0 100px 0;
+  width: 80%;
+}
 @media only screen and (max-width: 480px) {
   .section__two .multichain__container {
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .section__two .multichain__container .top__div {
@@ -347,6 +363,11 @@ footer {
   font-size: 61px;
   font-weight: 900;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container .top__div .left__container .heading__secondary {
+    font-size: 45px;
+  }
 }
 .section__two .multichain__container .top__div .right__container .button__blue {
   display: inline-block;
@@ -412,6 +433,11 @@ footer {
   font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .section__contents .heading__secondary {
+    font-size: 45px;
+  }
 }
 .section__contents .container__phase {
   width: 100%;

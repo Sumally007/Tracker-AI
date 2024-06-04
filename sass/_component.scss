@@ -132,12 +132,23 @@
 //////////////////////////////////
 /// MAIN
 .section__one{
-
+    &--contents{
+        
+        @media only screen and (max-width: $bp-moble){
+            height: 80%;
+        }
+    }
+    
+    
     .container__image{
-        height: 100%;
-        .background__image{
-            width: 100%;
+        @media only screen and (max-width: $bp-moble){
             height: 100%;
+        }
+        .background__image{
+            @media only screen and (max-width: $bp-moble){
+                width: 100%;
+                margin-top: 260px;
+            }
         }
     }
     .container__content{
@@ -152,8 +163,8 @@
         margin: 0 auto;
 
         @media only screen and (max-width: $bp-moble){
-            top: 7%;
-            height: 100%;
+            top: 3%;
+            height: 107%;
             display: block;
             
         }
@@ -166,6 +177,9 @@
         .heading__secondary{
             @include heading__secondary;
             text-align: center;
+            @media only screen and (max-width: $bp-moble){
+                font-size: 44px;
+            }
         }
     
         .heading__tertiary{
@@ -206,8 +220,15 @@
 /// SECTION TWO
 .section__two{
     .multichain__container{
+        display: flex;
+        flex-direction: column;
+        padding: 150px 0 100px 0;
+        width: 80%;
+
         @media only screen and (max-width: $bp-moble){
             justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
         .top__div{
             display: flex;
@@ -221,8 +242,12 @@
                 .heading__primary{
                     @include primaryheading;
                 }
+
                 .heading__secondary{
                     @include heading__secondary;
+                    @media only screen and (max-width: $bp-moble){
+                        font-size: 45px;
+                    }
                 }
             }
         
@@ -284,6 +309,10 @@
     .heading__secondary{
         @include heading__secondary;
         text-align: center;
+        
+        @media only screen and (max-width: $bp-moble){
+            font-size: 45px;
+        }
     }
     
     .container__phase{
