@@ -16,6 +16,7 @@
 /// HEADER
 .main__header{
     .first__head{
+        background-color: #0a0a1483;
         .logo{
             width: 56px;
             height: 56.91px;
@@ -124,6 +125,10 @@
         .hero__image{
             width: 457px;
             height: 457px;
+
+            @media only screen and (max-width: $bp-moble){
+                width: 430px;
+            }
         }
     }
 }
@@ -281,6 +286,21 @@
                     flex-basis: 100%;
                     text-align: center;
                 }
+
+                .center{
+                    display: none;
+
+                    @media only screen and (max-width: $bp-moble){
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .coins{
+                        width: 383px;
+                        height: 400px;
+                    }
+                }
                 .heading__tertiary{
                     @include heading__tertiary;
                     text-transform: uppercase;
@@ -388,6 +408,10 @@
                 padding: 3px;
                 border-radius: 100px;
                 background-color: var(--color-blue-light);
+
+                @media only screen and (max-width: $bp-moble){
+                    width: 99px;
+                }
     
                 &--light{
                     background-color: #3289a980;
@@ -452,7 +476,9 @@
     
             .left__box{
                 height: 100%;
-    
+                @media only screen and (max-width: $bp-moble){
+                    display: none;
+                }
                 .box__details{
                     display: flex;
                     align-items: center;
@@ -499,7 +525,29 @@
             }
             .right__box{
                 height: 100%;
-    
+                @media only screen and (max-width: $bp-moble){
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    
+                }
+                .left__box{
+                    display: none;
+                    @media only screen and (max-width: $bp-moble){
+                        display: block;
+                        width: 50%;
+                        margin-left: 20px;
+                    }
+                }
+
+                .right__box{
+                    @media only screen and (max-width: $bp-moble){
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 45%;
+                    }
+                }
                 .box__details{
                     display: flex;
                     align-items: center;

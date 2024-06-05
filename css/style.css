@@ -133,6 +133,9 @@ footer {
   }
 }
 
+.main__header .first__head {
+  background-color: rgba(10, 10, 20, 0.5137254902);
+}
 .main__header .first__head .logo {
   width: 56px;
   height: 56.91px;
@@ -239,6 +242,11 @@ footer {
 .main__header .second__head .hero__image {
   width: 457px;
   height: 457px;
+}
+@media only screen and (max-width: 480px) {
+  .main__header .second__head .hero__image {
+    width: 430px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -404,6 +412,20 @@ footer {
     text-align: center;
   }
 }
+.section__two .multichain__container .bottom__div .right__container .center {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .section__two .multichain__container .bottom__div .right__container .center {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+.section__two .multichain__container .bottom__div .right__container .center .coins {
+  width: 383px;
+  height: 400px;
+}
 .section__two .multichain__container .bottom__div .right__container .heading__tertiary {
   line-height: 27px;
   font-size: 24px;
@@ -510,6 +532,11 @@ footer {
   border-radius: 100px;
   background-color: var(--color-blue-light);
 }
+@media only screen and (max-width: 480px) {
+  .section__three .section__contents .line__box .lines {
+    width: 99px;
+  }
+}
 .section__three .section__contents .line__box .lines--light {
   background-color: rgba(50, 137, 169, 0.5019607843);
 }
@@ -571,6 +598,11 @@ footer {
 .section__four .section__contents .statistic__container .left__box {
   height: 100%;
 }
+@media only screen and (max-width: 480px) {
+  .section__four .section__contents .statistic__container .left__box {
+    display: none;
+  }
+}
 .section__four .section__contents .statistic__container .left__box .box__details {
   display: flex;
   align-items: center;
@@ -607,6 +639,31 @@ footer {
 }
 .section__four .section__contents .statistic__container .right__box {
   height: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .section__four .section__contents .statistic__container .right__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.section__four .section__contents .statistic__container .right__box .left__box {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .section__four .section__contents .statistic__container .right__box .left__box {
+    display: block;
+    width: 50%;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section__four .section__contents .statistic__container .right__box .right__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+  }
 }
 .section__four .section__contents .statistic__container .right__box .box__details {
   display: flex;
