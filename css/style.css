@@ -259,7 +259,8 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .main__header .second__head .hero__image {
-    width: 420px;
+    width: 371px;
+    height: 400px;
   }
 }
 
@@ -433,7 +434,7 @@ footer {
   }
 }
 .section__two .multichain__container .bottom__div .right__container .center .coins {
-  width: 383px;
+  width: 347px;
   height: 400px;
 }
 .section__two .multichain__container .bottom__div .right__container .heading__tertiary {
