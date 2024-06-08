@@ -75,15 +75,16 @@ body {
 }
 
 main .section__one {
-  width: 100vw;
   background-color: var(--color-black);
-  position: relative;
   color: var(--color-white);
+  background-image: url(/img/background.svg);
+  background-repeat: no-repeat;
+  padding-bottom: 145px;
 }
 @media only screen and (max-width: 480px) {
   main .section__one {
-    width: 100%;
-    height: 126vh;
+    background-size: cover;
+    background-position: top;
   }
 }
 main .section__two {
@@ -154,7 +155,7 @@ footer {
 }
 .main__header .first__head .navigation__lists {
   width: 326px;
-  color: #0A0A14;
+  color: #fff;
 }
 @media only screen and (max-width: 480px) {
   .main__header .first__head .navigation__lists {
@@ -249,39 +250,9 @@ footer {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .section__one--contents {
-    height: 80%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .section__one .container__image {
-    height: 100%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .section__one .container__image .background__image {
-    width: 100%;
-    margin-top: 260px;
-  }
-}
 .section__one .container__content {
-  position: absolute;
-  top: 18%;
-  left: 10%;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
-}
-@media only screen and (max-width: 480px) {
-  .section__one .container__content {
-    top: 3%;
-    height: 107%;
-    display: block;
-  }
 }
 .section__one .container__content .heading__primary {
   text-transform: uppercase;
@@ -326,6 +297,11 @@ footer {
   padding: 20px;
   line-height: 20px;
   background-color: rgba(159, 183, 206, 0.1490196078);
+}
+@media only screen and (max-width: 480px) {
+  .section__one .cards__box .card {
+    margin-top: 10px;
+  }
 }
 .section__one .cards__box .card .secondary__pargraph {
   font-size: 17px;
