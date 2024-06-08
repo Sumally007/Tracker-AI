@@ -1,13 +1,13 @@
 //////////////////////////////////
 /// MANU BTN
 .manu{
-    position: fixed;
-    top: 20px;
-    right: 26px;
-    z-index: 1000;
-
-    @media only screen and (min-width: $bp-moble){
-        display: none;
+    display: none;
+    @media only screen and (max-width: $bp-moble){
+        display: block;
+        position: fixed;
+        top: 17px;
+        right: 26px;
+        z-index: 1000;
     }
 }
 
@@ -94,6 +94,7 @@
     .second__head{
         @media only screen and (max-width: $bp-moble){
             margin-top: 84px;
+            margin-bottom: 38px;
             flex-direction: column-reverse;
             align-items: center;
         }
@@ -106,10 +107,18 @@
         
             .heading__primary{
                 @include primaryheading;
+                @media only screen and (max-width: $bp-moble){
+                    margin-bottom: 8px;
+                }
             }
             .heading__secondary{
                 @include heading__secondary;
-                font-size: 45px
+                @media only screen and (max-width: $bp-moble){
+                    font-size: 45px;
+                    line-height: 50px;
+                }
+                
+
             }
             .button__blue{
                 @include button__blue;  
@@ -127,7 +136,7 @@
             height: 457px;
 
             @media only screen and (max-width: $bp-moble){
-                width: 430px;
+                width: 420px;
             }
         }
     }
@@ -144,6 +153,9 @@
         .heading__primary{
             @include primaryheading;
             text-align: center;
+            @media only screen and (max-width: $bp-moble){
+                margin-bottom: 8px;
+            }
         }
     
         .heading__secondary{
@@ -203,7 +215,7 @@
         @media only screen and (max-width: $bp-moble){
             justify-content: center;
             padding-top: 50px;
-            padding-bottom: 50px;
+            padding-bottom: 40px;
         }
         .top__div{
             display: flex;
@@ -216,12 +228,16 @@
             .left__container{
                 .heading__primary{
                     @include primaryheading;
+                    @media only screen and (max-width: $bp-moble){
+                        margin-bottom: 8px;
+                    }
                 }
 
                 .heading__secondary{
                     @include heading__secondary;
                     @media only screen and (max-width: $bp-moble){
                         font-size: 45px;
+                        line-height: 50px;
                     }
                 }
             }
@@ -239,6 +255,9 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 60px;
+            @media only screen and (max-width: $bp-moble){
+                margin-top: 40px;
+            }
             .left__container{
                 @media only screen and (max-width: $bp-moble){
                     display: none;
@@ -256,7 +275,11 @@
                     flex-basis: 100%;
                     text-align: center;
                 }
-
+                div{
+                    @media only screen and (max-width: $bp-moble){
+                        margin-bottom: 30px;
+                    }
+                }
                 .center{
                     display: none;
 
@@ -274,6 +297,9 @@
                 .heading__tertiary{
                     @include heading__tertiary;
                     text-transform: uppercase;
+                    @media only screen and (max-width: $bp-moble){
+                        margin-bottom: 8px;
+                    }
                 }
         
                 .secondary__pargraph{
@@ -296,6 +322,9 @@
         .heading__primary{
             @include primaryheading;
             text-align: center;
+            @media only screen and (max-width: $bp-moble){
+                margin-bottom: 8px;
+            }
         }
     
         .heading__secondary{
@@ -304,6 +333,7 @@
             
             @media only screen and (max-width: $bp-moble){
                 font-size: 45px;
+                margin-bottom: 15px;
             }
         }
         
@@ -370,7 +400,7 @@
             @media only screen and (max-width: $bp-moble){
                 width: 307px;
                 margin-top: 23px;
-                margin-bottom: 34px;
+                margin-bottom: 40px;
             }
     
             .lines{
@@ -408,6 +438,9 @@
         .heading__primary{
             @include primaryheading;
             text-align: center;
+            @media only screen and (max-width: $bp-moble){
+                margin-bottom: 8px;
+            }
         }
     
         .heading__secondary{
@@ -416,6 +449,7 @@
 
             @media only screen and (max-width: $bp-moble){
                 font-size: 45px;
+                margin-bottom: 15px;
             }
         }
     
@@ -425,7 +459,7 @@
             text-align: center;
 
             @media only screen and (max-width: $bp-moble){
-                font-size: 19px;
+                font-size: 18px;
             }
         }
     
@@ -440,8 +474,8 @@
             @media only screen and (max-width: $bp-moble){
                 flex-direction: column;
                 margin-top: 21px;
-                padding-bottom: 15px;
-                gap: 60px;
+                padding-bottom: 39px;
+                gap: 30px;
             }
     
             .left__box{
@@ -582,7 +616,6 @@ footer{
                 flex-direction: column;
                 padding-top: 2px;
                 justify-content: center;
-                width: 100%;
             }
         }
 
@@ -623,5 +656,8 @@ footer{
     P{
         text-align: center;
         padding: 20px;
+        @media only screen and (max-width: $bp-moble){
+            padding-bottom: 25px;
+        }
     }
 }
