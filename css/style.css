@@ -606,6 +606,9 @@ footer {
     font-size: 18px;
   }
 }
+.section__four .section__contents .secondary__pargraph span {
+  display: inline-block;
+}
 .section__four .section__contents .statistic__container {
   display: flex;
   justify-content: center;

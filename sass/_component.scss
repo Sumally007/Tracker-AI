@@ -461,6 +461,10 @@
             @media only screen and (max-width: $bp-moble){
                 font-size: 18px;
             }
+
+            span{
+                display: inline-block;
+            }
         }
     
         .statistic__container{
