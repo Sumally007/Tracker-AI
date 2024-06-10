@@ -356,6 +356,7 @@
     
             @media only screen and (max-width: $bp-moble){
                 margin-top: 20px;
+                padding: 8px;
             }
             
     
@@ -370,6 +371,7 @@
                     width: 155.3px;
                     padding: 12px;
                     border-radius: 8px;
+                    margin-right: 10px;
                 }
     
                 .heading__tertiary{
@@ -392,6 +394,13 @@
                             font-size: 16px;
                         }
                     }
+                }
+
+                &--nomargin{
+                    @media only screen and (max-width: $bp-moble){
+                        margin-right: 0;
+                    }
+                    
                 }
             }
     

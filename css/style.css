@@ -487,6 +487,7 @@ footer {
 @media only screen and (max-width: 480px) {
   .section__three .section__contents .container__phase {
     margin-top: 20px;
+    padding: 8px;
   }
 }
 .section__three .section__contents .container__phase .phase__box {
@@ -501,6 +502,7 @@ footer {
     width: 155.3px;
     padding: 12px;
     border-radius: 8px;
+    margin-right: 10px;
   }
 }
 .section__three .section__contents .container__phase .phase__box .heading__tertiary {
@@ -525,6 +527,11 @@ footer {
 @media only screen and (max-width: 480px) {
   .section__three .section__contents .container__phase .phase__box .list__box li {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section__three .section__contents .container__phase .phase__box--nomargin {
+    margin-right: 0;
   }
 }
 .section__three .section__contents .line__box {
