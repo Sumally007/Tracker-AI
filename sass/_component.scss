@@ -5,7 +5,7 @@
     @media only screen and (max-width: $bp-moble){
         display: block;
         position: fixed;
-        top: 17px;
+        top: 21px;
         right: 26px;
         z-index: 1000;
     }
@@ -17,6 +17,18 @@
 .main__header{
     .first__head{
         background-color: #0a0a1483;
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        z-index: 100;
+
+        @media only screen and (max-width: $bp-moble){
+            height: 10%;
+        }
         .logo{
             width: 56px;
             height: 56.91px;
@@ -136,8 +148,8 @@
             height: 457px;
 
             @media only screen and (max-width: $bp-moble){
-                width: 371px;
-                height: 400px;
+                width: 316px;
+                height: 351px
             }
         }
     }
@@ -273,7 +285,7 @@
             .right__container{
                 flex-basis: 48%;
                 @media only screen and (max-width: $bp-moble){
-                    flex-basis: 100%;
+                    width: 100%;
                     text-align: center;
                 }
                 div{
@@ -286,13 +298,11 @@
 
                     @media only screen and (max-width: $bp-moble){
                         display: block;
-                        width: 100%;
-                        height: 100%;
                     }
 
                     .coins{
-                        width: 347px;
-                        height: 400px;
+                        width: 320px;
+                        height: 322px
                     }
                 }
                 .heading__tertiary{
@@ -460,10 +470,7 @@
             text-align: center;
 
             @media only screen and (max-width: $bp-moble){
-                font-size: 18px;
-            }
-
-            span{
+                font-size: 1.02em;
                 display: inline-block;
             }
         }
@@ -554,7 +561,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        width: 45%;
+                        width: 47%;
                     }
                 }
                 .box__details{
