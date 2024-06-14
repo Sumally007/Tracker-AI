@@ -5,7 +5,7 @@
     @media only screen and (max-width: $bp-moble){
         display: block;
         position: fixed;
-        top: 21px;
+        top: 27px;
         right: 26px;
         z-index: 1000;
     }
@@ -270,6 +270,7 @@
             margin-top: 60px;
             @media only screen and (max-width: $bp-moble){
                 margin-top: 40px;
+                justify-content: center;
             }
             .left__container{
                 @media only screen and (max-width: $bp-moble){
@@ -493,10 +494,11 @@
             padding-bottom: 120px;
     
             @media only screen and (max-width: $bp-moble){
-                flex-direction: column;
-                margin-top: 21px;
-                padding-bottom: 39px;
-                gap: 30px;
+                display: grid;
+                justify-items: center;
+                row-gap: 30px;
+                margin-top: 28px;
+                padding-bottom: 40px;
             }
     
             .left__box{
@@ -551,19 +553,16 @@
             .right__box{
                 height: 100%;
                 @media only screen and (max-width: $bp-moble){
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    
-                }
-                .left__box{
                     display: none;
-                    @media only screen and (max-width: $bp-moble){
-                        display: block;
-                        width: 50%;
-                        margin-left: 20px;
-                    }
                 }
+                // .left__box{
+                //     // display: none;
+                //     @media only screen and (max-width: $bp-moble){
+                //         display: block;
+                //         width: 50%;
+                //         margin-left: 20px;
+                //     }
+                // }
 
                 .right__box{
                     @media only screen and (max-width: $bp-moble){
@@ -610,7 +609,53 @@
                 }
             }
     
-            
+            .contena{
+                @media only screen and (min-width: $bp-moble){
+                    display: none;
+                }
+
+                @media only screen and (max-width: $bp-moble){
+                    display: grid;
+                    grid-template: repeat(4, 90px) / repeat(2, 1fr);
+                    column-gap: 30px;
+                }
+
+                .box__details{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    
+        
+                    div img {
+                        width: 45px;
+                        height: 45px;
+                    }
+        
+                    p{
+                        display: inline-block;
+                        text-align: left;
+                        line-height: 32px;
+                        margin-left: 15px;
+                        
+                        .DF9930{
+                            color: #DF9930;
+                        }
+    
+                        .A730DF{
+                            color: #A730DF;
+                        }
+        
+                        .b04CDF{
+                            color: #304CDF;
+                        }
+        
+                        .b3DF30{
+                            color: #33DF30;
+                        }
+        
+                    }
+                }
+            }
     
             
             
