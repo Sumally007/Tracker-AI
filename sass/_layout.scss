@@ -72,6 +72,9 @@ main{
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--color-white);
+        @media only screen and (max-width: $bp-moble){
+            padding-top: 20px;
+        }
     }
 }
 

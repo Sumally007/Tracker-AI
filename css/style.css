@@ -101,6 +101,11 @@ main .section__four {
   background-repeat: no-repeat;
   color: var(--color-white);
 }
+@media only screen and (max-width: 480px) {
+  main .section__four {
+    padding-top: 20px;
+  }
+}
 
 footer {
   background-color: #000000;
