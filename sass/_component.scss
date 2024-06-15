@@ -511,11 +511,7 @@
                     align-items: center;
                     margin-bottom: 40px;
                     
-        
-                    div img {
-                        width: 45px;
-                        height: 45px;
-                    }
+                    
         
                     p{
                         display: inline-block;
@@ -555,14 +551,6 @@
                 @media only screen and (max-width: $bp-moble){
                     display: none;
                 }
-                // .left__box{
-                //     // display: none;
-                //     @media only screen and (max-width: $bp-moble){
-                //         display: block;
-                //         width: 50%;
-                //         margin-left: 20px;
-                //     }
-                // }
 
                 .right__box{
                     @media only screen and (max-width: $bp-moble){
@@ -625,35 +613,92 @@
                     align-items: center;
                     margin-bottom: 40px;
                     
-        
-                    div img {
-                        width: 45px;
-                        height: 45px;
+                    .colorbox{
+                        padding: 25px;
+                        border-radius: 11px;
                     }
-        
-                    p{
-                        display: inline-block;
-                        text-align: left;
-                        line-height: 32px;
-                        margin-left: 15px;
-                        
-                        .DF9930{
-                            color: #DF9930;
-                        }
-    
-                        .A730DF{
-                            color: #A730DF;
-                        }
-        
-                        .b04CDF{
-                            color: #304CDF;
-                        }
-        
-                        .b3DF30{
-                            color: #33DF30;
-                        }
-        
+
+                    .color-pink{
+                        background-color: var(--color-pink);
                     }
+
+                    .purple-light{
+                        background-color: var(--color-purple-light);
+                    }
+
+                    .color-red{
+                        background-color: var(--color-red);
+                    }
+
+                    .color-yellow{
+                        background-color: var(--color-yellow);
+                    }
+
+                    .blue-dark{
+                        background-color: var(--color-blue-dark);
+                    }
+
+                    .purple-dark{
+                        background-color: var(--color-purple-dark);
+                    }
+
+                    .color-pink{
+                        background-color: var(--color-pink);
+                    }
+
+                    .blue-light{
+                        background-color: var(--color-blue-light);
+                    }
+
+                    .color-green{
+                        background-color: var(--color-green);
+                    }
+                    @media only screen and (max-width: $bp-moble){
+                        div {
+                            p{
+                                display: inline-block;
+                                text-align: left;
+                                line-height: 32px;
+                                margin-left: 15px;
+
+                                    .DB30DF{
+                                        color: #DB30DF;
+                                    }
+
+                                    .DF3079{
+                                        color: #DF3079;
+                                    }
+
+                                    .RDF3079{
+                                        color: var(--color-red);
+                                    }
+
+                                    .b0AEDF{
+                                        color: var(--color-blue-light);
+                                    }
+                                    .DF9930{
+                                        color: #DF9930;
+                                    }
+                
+                                    .A730DF{
+                                        color: #A730DF;
+                                    }
+                    
+                                    .b04CDF{
+                                        color: #304CDF;
+                                    }
+                    
+                                    .b3DF30{
+                                        color: #33DF30;
+                                    }
+                            
+                                
+                
+                            }
+                        }
+                    }
+                   
+                    
                 }
             }
     
