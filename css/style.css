@@ -489,6 +489,7 @@ footer {
   .section__three .section__contents .container__phase {
     margin-top: 20px;
     padding: 8px;
+    width: 700px;
   }
 }
 .section__three .section__contents .container__phase .phase__box {
@@ -500,8 +501,8 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .section__three .section__contents .container__phase .phase__box {
-    width: 155.3px;
-    padding: 12px;
+    width: 216.3px;
+    padding: 25px;
     border-radius: 8px;
     margin-right: 10px;
   }
