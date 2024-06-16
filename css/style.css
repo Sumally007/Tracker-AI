@@ -92,7 +92,7 @@ main .section__three .section__contents {
 }
 @media only screen and (max-width: 480px) {
   main .section__three .section__contents {
-    width: 100%;
+    width: 100vw;
   }
 }
 main .section__four {
@@ -457,7 +457,7 @@ footer {
 }
 
 .section__three .section__contents {
-  width: 100%;
+  width: 100vw;
 }
 .section__three .section__contents .heading__primary {
   text-transform: uppercase;

@@ -329,7 +329,7 @@
 /// SECTION THREE
 .section__three{
     .section__contents{
-        width: 100%;
+        width: 100vw;
     
         .heading__primary{
             @include primaryheading;
