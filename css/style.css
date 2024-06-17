@@ -34,6 +34,7 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
+  background-color: var(--color-black);
 }
 
 .main__header {
@@ -85,7 +86,6 @@ main .section__three {
 main .section__three .section__contents {
   width: 80%;
   margin: 0 auto;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -542,19 +542,18 @@ footer {
   }
 }
 .section__three .section__contents .line__box {
-  width: 500px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
+  gap: 20px;
   margin-bottom: 100px;
-  text-align: center;
 }
 @media only screen and (max-width: 480px) {
   .section__three .section__contents .line__box {
     width: 307px;
-    margin-top: 23px;
-    margin-bottom: 40px;
+    margin: 25px auto 40px;
   }
 }
 .section__three .section__contents .line__box .lines {
