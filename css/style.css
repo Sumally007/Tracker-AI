@@ -93,6 +93,7 @@ main .section__three .section__contents {
 @media only screen and (max-width: 480px) {
   main .section__three .section__contents {
     width: 100vw;
+    overflow-x: scroll;
   }
 }
 main .section__four {
@@ -799,7 +800,7 @@ footer .navigation__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 100px 0 10px 0;
 }
@@ -821,11 +822,9 @@ footer .navigation__list {
 @media only screen and (max-width: 480px) {
   footer .navigation__list {
     margin-bottom: 20px;
-    width: 50%;
   }
 }
 footer .navigation__list ul {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -834,6 +833,7 @@ footer .navigation__list ul {
   footer .navigation__list ul {
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 5px;
   }
 }
 footer .navigation__list ul li {

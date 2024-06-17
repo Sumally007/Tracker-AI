@@ -717,7 +717,7 @@ footer{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 70%;
+            width: 80%;
             margin: 0 auto;
             
             padding: 100px 0 10px 0;
@@ -741,16 +741,15 @@ footer{
             width: 40%;
             @media only screen and (max-width: $bp-moble){
                 margin-bottom: 20px;
-                width: 50%;
             }
             ul{
-                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 list-style: none;
                 @media only screen and (max-width: $bp-moble){
                     flex-wrap: wrap;
                     justify-content: space-around;
+                    gap: 5px;
                 }
     
                 li{
