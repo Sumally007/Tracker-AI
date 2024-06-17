@@ -349,6 +349,12 @@
             }
         }
         
+        .scroll{
+            @media only screen and (max-width: $bp-moble){
+                overflow-x: scroll;
+            }
+            
+        }
         .container__phase{
             width: 100%;
             display: flex;
@@ -361,7 +367,7 @@
                 width: 700px;
             }
             
-    
+           
             .phase__box{
                 width: 354px;
                 padding: 40px;

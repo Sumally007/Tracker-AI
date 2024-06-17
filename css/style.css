@@ -93,7 +93,6 @@ main .section__three .section__contents {
 @media only screen and (max-width: 480px) {
   main .section__three .section__contents {
     width: 100vw;
-    overflow-x: scroll;
   }
 }
 main .section__four {
@@ -483,6 +482,11 @@ footer {
   .section__three .section__contents .heading__secondary {
     font-size: 45px;
     margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section__three .section__contents .scroll {
+    overflow-x: scroll;
   }
 }
 .section__three .section__contents .container__phase {
