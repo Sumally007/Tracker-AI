@@ -635,6 +635,30 @@ footer {
 .section__four .section__contents .statistic__container .left__box {
   height: 100%;
 }
+.section__four .section__contents .statistic__container .left__box .box__details .colorbox {
+  padding: 25px;
+  border-radius: 11px;
+}
+.section__four .section__contents .statistic__container .left__box .box__details .color-pink {
+  background-color: var(--color-pink);
+  box-shadow: 4px 4px 5px var(--color-pink);
+}
+.section__four .section__contents .statistic__container .left__box .box__details .purple-light {
+  background-color: var(--color-purple-light);
+  box-shadow: 4px 4px 5px var(--color-purple-light);
+}
+.section__four .section__contents .statistic__container .left__box .box__details .color-red {
+  background-color: var(--color-red);
+  box-shadow: 4px 4px 5px var(--color-red);
+}
+.section__four .section__contents .statistic__container .left__box .box__details .color-pink {
+  background-color: var(--color-pink);
+  box-shadow: 4px 4px 5px var(--color-pink);
+}
+.section__four .section__contents .statistic__container .left__box .box__details .blue-light {
+  background-color: var(--color-blue-light);
+  box-shadow: 4px 4px 5px var(--color-blue-light);
+}
 @media only screen and (max-width: 480px) {
   .section__four .section__contents .statistic__container .left__box {
     display: none;
@@ -672,6 +696,26 @@ footer {
 }
 .section__four .section__contents .statistic__container .right__box {
   height: 100%;
+}
+.section__four .section__contents .statistic__container .right__box .box__details .colorbox {
+  padding: 25px;
+  border-radius: 11px;
+}
+.section__four .section__contents .statistic__container .right__box .box__details .color-yellow {
+  background-color: var(--color-yellow);
+  box-shadow: 4px 4px 5px var(--color-yellow);
+}
+.section__four .section__contents .statistic__container .right__box .box__details .purple-dark {
+  background-color: var(--color-purple-dark);
+  box-shadow: 4px 4px 5px var(--color-purple-dark);
+}
+.section__four .section__contents .statistic__container .right__box .box__details .blue-dark {
+  background-color: var(--color-blue-dark);
+  box-shadow: 4px 4px 5px var(--color-blue-dark);
+}
+.section__four .section__contents .statistic__container .right__box .box__details .color-green {
+  background-color: var(--color-green);
+  box-shadow: 4px 4px 5px var(--color-green);
 }
 @media only screen and (max-width: 480px) {
   .section__four .section__contents .statistic__container .right__box {
@@ -737,30 +781,39 @@ footer {
 }
 .section__four .section__contents .statistic__container .contena .box__details .color-pink {
   background-color: var(--color-pink);
+  box-shadow: 4px 4px 5px var(--color-pink);
 }
 .section__four .section__contents .statistic__container .contena .box__details .purple-light {
   background-color: var(--color-purple-light);
+  box-shadow: 4px 4px 5px var(--color-purple-light);
 }
 .section__four .section__contents .statistic__container .contena .box__details .color-red {
   background-color: var(--color-red);
+  box-shadow: 4px 4px 5px var(--color-red);
 }
 .section__four .section__contents .statistic__container .contena .box__details .color-yellow {
   background-color: var(--color-yellow);
+  box-shadow: 4px 4px 5px var(--color-yellow);
 }
 .section__four .section__contents .statistic__container .contena .box__details .blue-dark {
   background-color: var(--color-blue-dark);
+  box-shadow: 4px 4px 5px var(--color-blue-dark);
 }
 .section__four .section__contents .statistic__container .contena .box__details .purple-dark {
   background-color: var(--color-purple-dark);
+  box-shadow: 4px 4px 5px var(--color-purple-dark);
 }
 .section__four .section__contents .statistic__container .contena .box__details .color-pink {
   background-color: var(--color-pink);
+  box-shadow: 4px 4px 5px var(--color-pink);
 }
 .section__four .section__contents .statistic__container .contena .box__details .blue-light {
   background-color: var(--color-blue-light);
+  box-shadow: 4px 4px 5px var(--color-blue-light);
 }
 .section__four .section__contents .statistic__container .contena .box__details .color-green {
   background-color: var(--color-green);
+  box-shadow: 4px 4px 5px var(--color-green);
 }
 @media only screen and (max-width: 480px) {
   .section__four .section__contents .statistic__container .contena .box__details div p {

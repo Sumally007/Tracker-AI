@@ -502,6 +502,40 @@
     
             .left__box{
                 height: 100%;
+                .box__details{
+                    .colorbox{
+                        padding: 25px;
+                        border-radius: 11px;
+                    }
+                    .color-pink{
+                        background-color: var(--color-pink);
+                        box-shadow: 4px 4px 5px var(--color-pink);
+                    }
+
+                    .purple-light{
+                        background-color: var(--color-purple-light);
+                        box-shadow: 4px 4px 5px var(--color-purple-light);
+                    }
+
+                    .color-red{
+                        background-color: var(--color-red);
+                        box-shadow: 4px 4px 5px var(--color-red);
+                    }
+
+                    
+
+                    .color-pink{
+                        background-color: var(--color-pink);
+                        box-shadow: 4px 4px 5px var(--color-pink);
+                    }
+
+                    .blue-light{
+                        background-color: var(--color-blue-light);
+                        box-shadow: 4px 4px 5px var(--color-blue-light);
+                    }
+
+                    
+                }
                 @media only screen and (max-width: $bp-moble){
                     display: none;
                 }
@@ -547,6 +581,32 @@
             }
             .right__box{
                 height: 100%;
+
+                .box__details{
+                    .colorbox{
+                        padding: 25px;
+                        border-radius: 11px;        
+                    }
+                    .color-yellow{
+                        background-color: var(--color-yellow);
+                        box-shadow: 4px 4px 5px var(--color-yellow);
+                    }
+
+                    .purple-dark{
+                        background-color: var(--color-purple-dark);
+                        box-shadow: 4px 4px 5px var(--color-purple-dark);
+                    }
+
+                    .blue-dark{
+                        background-color: var(--color-blue-dark);
+                        box-shadow: 4px 4px 5px var(--color-blue-dark);
+                    }
+
+                    .color-green{
+                    background-color: var(--color-green);
+                    box-shadow: 4px 4px 5px var(--color-green);
+                    }
+                }
                 @media only screen and (max-width: $bp-moble){
                     display: none;
                 }
@@ -620,38 +680,47 @@
 
                     .color-pink{
                         background-color: var(--color-pink);
+                        box-shadow: 4px 4px 5px var(--color-pink);
                     }
 
                     .purple-light{
                         background-color: var(--color-purple-light);
+                        box-shadow: 4px 4px 5px var(--color-purple-light);
                     }
 
                     .color-red{
                         background-color: var(--color-red);
+                        box-shadow: 4px 4px 5px var(--color-red);
                     }
 
                     .color-yellow{
                         background-color: var(--color-yellow);
+                        box-shadow: 4px 4px 5px var(--color-yellow);
                     }
 
                     .blue-dark{
                         background-color: var(--color-blue-dark);
+                        box-shadow: 4px 4px 5px var(--color-blue-dark);
                     }
 
                     .purple-dark{
                         background-color: var(--color-purple-dark);
+                        box-shadow: 4px 4px 5px var(--color-purple-dark);
                     }
 
                     .color-pink{
                         background-color: var(--color-pink);
+                        box-shadow: 4px 4px 5px var(--color-pink);
                     }
 
                     .blue-light{
                         background-color: var(--color-blue-light);
+                        box-shadow: 4px 4px 5px var(--color-blue-light);
                     }
 
                     .color-green{
                         background-color: var(--color-green);
+                        box-shadow: 4px 4px 5px var(--color-green);
                     }
                     @media only screen and (max-width: $bp-moble){
                         div {
