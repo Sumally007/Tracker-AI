@@ -1,18 +1,4 @@
 //////////////////////////////////
-/// MANU BTN
-.manu{
-    display: none;
-    @media only screen and (max-width: $bp-moble){
-        display: block;
-        position: fixed;
-        top: 27px;
-        right: 26px;
-        z-index: 1000;
-    }
-}
-
-
-//////////////////////////////////
 /// HEADER
 .main__header{
     .first__head{
@@ -98,7 +84,11 @@
         
                 }
             }
-        
+            .manu{
+                @media only screen and (min-width: $bp-moble){
+                    display: none;
+                }
+            }
             
         }
     }
@@ -615,6 +605,7 @@
                     display: grid;
                     grid-template: repeat(4, 90px) / repeat(2, 1fr);
                     column-gap: 30px;
+                    padding-left: 20px;
                 }
 
                 .box__details{
@@ -749,6 +740,7 @@ footer{
             width: 40%;
             @media only screen and (max-width: $bp-moble){
                 margin-bottom: 20px;
+                width: 60%;
             }
             ul{
                 display: flex;
