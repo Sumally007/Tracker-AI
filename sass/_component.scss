@@ -740,7 +740,7 @@ footer{
             width: 40%;
             @media only screen and (max-width: $bp-moble){
                 margin-bottom: 20px;
-                width: 60%;
+                width: 211px;  
             }
             ul{
                 display: flex;
@@ -748,8 +748,8 @@ footer{
                 list-style: none;
                 @media only screen and (max-width: $bp-moble){
                     flex-wrap: wrap;
-                    justify-content: space-around;
-                    gap: 5px;
+                    justify-content: center;
+                    gap: 12px;
                 }
     
                 li{

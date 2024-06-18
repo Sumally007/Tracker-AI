@@ -821,7 +821,7 @@ footer .navigation__list {
 @media only screen and (max-width: 480px) {
   footer .navigation__list {
     margin-bottom: 20px;
-    width: 60%;
+    width: 211px;
   }
 }
 footer .navigation__list ul {
@@ -832,8 +832,8 @@ footer .navigation__list ul {
 @media only screen and (max-width: 480px) {
   footer .navigation__list ul {
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 5px;
+    justify-content: center;
+    gap: 12px;
   }
 }
 footer .navigation__list ul li {
